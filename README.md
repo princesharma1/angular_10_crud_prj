@@ -1,4 +1,4 @@
-# P1
+# angular_10_crud_prj
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
