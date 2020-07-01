@@ -1,0 +1,47 @@
+<div class="container">
+<div class="row">
+
+    <div class="col-md-12">
+<div class="card">
+
+    <div class="card-header">Add Files</div>
+    <div calss="card-body">
+    <div *ngIf="flag; else elseBlock">
+        <div class="alert alert-success" role="alert">
+            Data added successfully!
+            </div>
+    </div>
+    <ng-template #elseBlock>
+    <!-- <div class="alert alert-danger" role="alert">
+    Unable to Add data.
+    </div> -->
+    </ng-template>
+
+
+  
+
+        <div class="_form">
+        
+            <form  [formGroup]  = "uploadForm" method="post" (ngSubmit)="onSubmit()" >  
+            <div class="form-group">
+              <label for="Fname">Fname</label>
+              <input type="text" class="form-control" name="fname" formControlName="fname" />
+            </div>
+            <div class="form-group">
+              <label for="Fpname">Fpname</label>
+              <input type="text" class="form-control" name="fpname" formControlName="fpname" />
+            </div>
+            <div class="form-group">
+                <label for="Fpdesc">Fpdesc</label>
+                <textarea class="form-control" name="fpdesc"  formControlName="fpdesc" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+</div>

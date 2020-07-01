@@ -1,0 +1,30 @@
+<!-- <button (click)="getsdata()">Click</button>
+
+
+{{hdata | json}} -->
+
+<div class="controller">
+
+<div class="col">
+
+
+
+<table class="table table-bordered table-responsive">
+
+    <tr *ngFor="let h of hdata">
+<td>{{h.id}}</td>
+<td>{{h.fname}}</td>
+<td>{{h.fpname}}</td>
+<!--<td>{{h.fpdesc}}</td> -->
+<td>{{h.createdDate}}</td>
+<td>{{h.modifiedDate}}</td>
+<td><a routerLink="/file/{{h.id}}" title="{{h.id}}">View</a></td>
+<td><a routerLink="/file/edit/{{h.id}}" title="{{h.id}}">Edit</a></td>
+    </tr>
+
+
+</table>
+</div>
+
+
+</div>

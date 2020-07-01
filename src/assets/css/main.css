@@ -1,0 +1,6 @@
+#_msg_box{float:left;width:100%;box-sizing:content-box;}
+#_success_msg{position:relative;padding:5px 10px;text-align:center;border:1px solid #1a8c05;background:#deffd9;color:#1a8c05;margin-bottom:10px;margin-top:-20px}
+#_error_msg{position:relative;padding:5px 10px;text-align:center;border:1px solid #f19797;background:#f7dcdc;color:red;margin-bottom:10px;margin-top:-20px}
+._close{font-weight:bold;cursor:pointer;position:absolute;border-radius:100%;padding:5px 8px 5px 9px;color:#fff;top:-9px;font-size:12px;right:-10px;font-weight:bold;z-index:999}
+#_success_msg ._close{background:#89da7d;border:1px solid #89da7d}
+#_error_msg ._close{background:#c00}
